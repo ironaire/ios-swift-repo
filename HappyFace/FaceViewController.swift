@@ -17,6 +17,8 @@ class FaceViewController: UIViewController, FaceViewDataSource {
             faceView.dataSource = self
             // add pinch handler to face view
             faceView.addGestureRecognizer(UIPinchGestureRecognizer(target: faceView, action: "scale:"))
+            faceView.addGestureRecognizer(UIRotationGestureRecognizer(target: faceView, action: "rotate:"))
+            faceView.addGestureRecognizer(UITapGestureRecognizer(target: faceView, action: "tap:"))
             
             // pan gesture handler can also be added here
             // we are adding pan gesture recognizer on storyboard

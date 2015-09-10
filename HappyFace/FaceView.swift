@@ -136,4 +136,15 @@ class FaceView: UIView {
             gesture.scale = 1
         }
     }
+    
+    func rotate(gesture: UIRotationGestureRecognizer) {
+        if gesture.state == .Changed {
+            self.transform = CGAffineTransformRotate(self.transform, gesture.rotation)
+            gesture.rotation = 0.0
+        }
+    }
+    
+    func tap(gesture: UITapGestureRecognizer) {
+        
+    }
 }
