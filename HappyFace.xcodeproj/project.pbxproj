@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		36607A321BA0A8EB00656425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36607A311BA0A8EB00656425 /* AppDelegate.swift */; };
-		36607A341BA0A8EB00656425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36607A331BA0A8EB00656425 /* ViewController.swift */; };
 		36607A371BA0A8EB00656425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36607A351BA0A8EB00656425 /* Main.storyboard */; };
 		36607A391BA0A8EB00656425 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36607A381BA0A8EB00656425 /* Images.xcassets */; };
 		36607A3C1BA0A8EB00656425 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36607A3A1BA0A8EB00656425 /* LaunchScreen.xib */; };
 		36607A481BA0A8EB00656425 /* HappyFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36607A471BA0A8EB00656425 /* HappyFaceTests.swift */; };
+		36607A521BA0BA9A00656425 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36607A511BA0BA9A00656425 /* FaceViewController.swift */; };
+		36607A541BA0BCD000656425 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36607A531BA0BCD000656425 /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		36607A2C1BA0A8EB00656425 /* HappyFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36607A301BA0A8EB00656425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36607A311BA0A8EB00656425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36607A331BA0A8EB00656425 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36607A361BA0A8EB00656425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36607A381BA0A8EB00656425 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		36607A3B1BA0A8EB00656425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		36607A411BA0A8EB00656425 /* HappyFaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyFaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36607A461BA0A8EB00656425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36607A471BA0A8EB00656425 /* HappyFaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyFaceTests.swift; sourceTree = "<group>"; };
+		36607A511BA0BA9A00656425 /* FaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
+		36607A531BA0BCD000656425 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,10 @@
 		36607A2E1BA0A8EB00656425 /* HappyFace */ = {
 			isa = PBXGroup;
 			children = (
-				36607A311BA0A8EB00656425 /* AppDelegate.swift */,
-				36607A331BA0A8EB00656425 /* ViewController.swift */,
+				36607A511BA0BA9A00656425 /* FaceViewController.swift */,
 				36607A351BA0A8EB00656425 /* Main.storyboard */,
+				36607A531BA0BCD000656425 /* FaceView.swift */,
 				36607A381BA0A8EB00656425 /* Images.xcassets */,
-				36607A3A1BA0A8EB00656425 /* LaunchScreen.xib */,
 				36607A2F1BA0A8EB00656425 /* Supporting Files */,
 			);
 			path = HappyFace;
@@ -90,6 +91,8 @@
 		36607A2F1BA0A8EB00656425 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				36607A3A1BA0A8EB00656425 /* LaunchScreen.xib */,
+				36607A311BA0A8EB00656425 /* AppDelegate.swift */,
 				36607A301BA0A8EB00656425 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36607A341BA0A8EB00656425 /* ViewController.swift in Sources */,
 				36607A321BA0A8EB00656425 /* AppDelegate.swift in Sources */,
+				36607A521BA0BA9A00656425 /* FaceViewController.swift in Sources */,
+				36607A541BA0BCD000656425 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
