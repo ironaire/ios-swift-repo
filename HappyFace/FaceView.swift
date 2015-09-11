@@ -144,7 +144,15 @@ class FaceView: UIView {
         }
     }
     
-    func tap(gesture: UITapGestureRecognizer) {
-        
+    func tapOnce(gesture: UITapGestureRecognizer) {
+        if gesture.state == .Ended {
+           scale /= 2
+        }
+    }
+    
+    func tapTwice(gesture: UITapGestureRecognizer) {
+        if gesture.state == .Ended {
+            scale *= 2
+        }
     }
 }
