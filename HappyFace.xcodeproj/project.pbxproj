@@ -159,6 +159,8 @@
 		36607A241BA0A8EB00656425 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = swang;
 				TargetAttributes = {
@@ -415,6 +417,7 @@
 				36607A4D1BA0A8EB00656425 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36607A4E1BA0A8EB00656425 /* Build configuration list for PBXNativeTarget "HappyFaceTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +426,7 @@
 				36607A501BA0A8EB00656425 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

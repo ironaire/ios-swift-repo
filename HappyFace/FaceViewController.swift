@@ -56,7 +56,7 @@ class FaceViewController: UIViewController, FaceViewDataSource {
     var happiness = 75 { // 0 = very sad, 100 = very happy
         didSet {
             happiness = min(max(happiness, 0), 100)
-            println("Happiness: \(happiness)")
+            print("Happiness: \(happiness)")
             updateUI()
         }
     }
